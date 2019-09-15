@@ -1,17 +1,50 @@
 <%-- 
-    Document   : bandas
-    Created on : 13/09/2019, 00:56:42
-    Author     : T-Gamer
+    Document   : index
+    Created on : 14/09/2019, 09:38:54
+    Author     : natal
 --%>
 
+<%@page import="br.com.cadastro.CadastroBanda"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="br.com.cadastro.Db"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Home</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
+        <h1 style="text-align: center">Home</h1>  
+        <hr>
+        <h3><a href="index.jsp">Home</a></h3>
+        <h3><a href="adicionarBanda.jsp">Adicionar</a></h3>  
+        
+<%----- Tabela -----%>    
+
+        <table border="1" style="position: bottom">
+            <tr>
+                <th>Índice</th>
+                <th>Banda</th>
+                <th>Comando</th>
+            </tr>  
+            <tr>
+
+<%----- Pegando valores -----%>
+
+                <%for (CadastroBanda c: Db.getCadastro()) {%>
+            
+                <td><%= Db.getCadastro().indexOf(c) %></td>
+                <td><%= c.getBanda() %></td>
+                
+<%----- Mais comandos -----%>  
+
+                <td>
+                    <a href="alterar.jsp?index=<%= Db.getCadastro().indexOf(c) %>">Alterar</a>
+                    <a href="excluir.jsp?index=<%= Db.getCadastro().indexOf(c) %>">Excluir</a>
+                </td>
+            </tr>
+        <% } %>
+        </table>
     </body>
 </html>
