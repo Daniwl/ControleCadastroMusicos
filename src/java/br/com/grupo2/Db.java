@@ -37,16 +37,25 @@ public class Db {
         }
         
         
-    
-    public static void addBanda(Bandas banda){
-        bandas.add(banda);
-    }
-    public static void updateBanda(int index, Bandas banda){
-        bandas.set(index, banda);
-    }
-    public static void removeBanda(int index){
-        bandas.remove(index);
-    }
+        public static ArrayList<Bandas> getCadastro() {
+            if (bandas == null) {
+                bandas = new ArrayList<>();
+            }
+            
+            return bandas;
+        }
+        
+        public static void addCadastroBanda(Bandas cadastra) {
+            bandas.add(cadastra);
+        }
+        
+        public static void updateCadastroBanda(int index, Bandas cadastra) {
+            bandas.set(index, cadastra);
+        }
+        
+        public static void remove(int index) {
+            bandas.remove(index);
+        }
     
     
     public static ArrayList<Musicas> getMusica() {
