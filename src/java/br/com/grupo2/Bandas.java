@@ -3,21 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.grupo2;
+package br.com.cadastro;
 
-//Natália
+/**
+ *
+ * @author natal
+ */
 public class Bandas {
-    private String musica;
+    private String banda;
     
-    public Bandas(String musica) {
-        this.musica = musica;
-    }
-    
-    public String getMusica() {
-        return musica;
-    }
-    
-    public String setMusica(String musica) {
-        return this.musica = musica;
-    }
+public Bandas(String banda) {
+    this.banda = banda;
 }
+    
+    public String getBanda() {
+        return banda;
+    }
+
+    public void setBanda(String banda) {
+       this.banda = banda;
+    }
+};
