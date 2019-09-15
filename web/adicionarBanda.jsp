@@ -36,8 +36,8 @@
         
         <form>
             <h1 style="text-align: center">Nome da banda:</h1><br>
-            <input type="text" name="banda" style="margin-left: 41%"/><br><br>
-            <input type="submit" name="add" value="Adicionar"  style="margin-left: 42%">
+            <input type="text" name="banda"/><br><br>
+            <input type="submit" name="add" value="Adicionar">
             <input type="submit" name="cancel" value="Cancelar">
         </form>
     </body>
