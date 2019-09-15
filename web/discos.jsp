@@ -3,8 +3,8 @@
     Created on : 13/09/2019, 00:56:51
     Author     : T-Gamer
 --%>
-<%@page import="br.com.grupo2.bandas.Bandas"%>
-<%@page import="br.com.grupo2.bandas.Db"%>
+<%@page import="br.com.grupo2.Bandas"%>
+<%@page import="br.com.grupo2.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@
                 <th>Musicas</th>
                 <th>Comandos</th>
             </tr>
-            <%for(Bandas c: Db.getBandas()){%>
+            <%for(Bandas c: Db.Bandas()){%>
             <tr>
                 <td><%= Db.getBandas().indexOf(c) %></td>
                 <td><%= c.getMusico() %></td>

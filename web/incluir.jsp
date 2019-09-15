@@ -3,8 +3,9 @@
     Created on : 14/09/2019, 22:39:49
     Author     : Luisatto
 --%>
-<%@page import="br.com.grupo2.bandas.Bandas"%>
-<%@page import="br.com.grupo2.bandas.Db"%>
+<%@page import="br.com.grupo2.Bandas"%>
+<%@page import="br.com.grupo2.Discos"%>
+<%@page import="br.com.grupo2.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -14,7 +15,7 @@
         String musico = request.getParameter("musico");
         String disco = request.getParameter("disco");
         String musicas = request.getParameter("musica");
-        Bandas c = new Bandas(musico, disco, musicas);
+        Discos c = new Disco(musico, disco, musicas);
         Db.getBandas().add(c);
         response.sendRedirect("home.jsp");
     }

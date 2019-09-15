@@ -5,36 +5,19 @@
  */
 package br.com.grupo2;
 
-/**
- *
- * @author Luisatto
- */
+//Natália
 public class Bandas {
-    private String musico;
-    private String album;
     private String musica;
-
-    public String getMusico() {
-        return musico;
+    
+    public Bandas(String musica) {
+        this.musica = musica;
     }
-
-    public void setMusico(String musico) {
-        this.musico = musico;
-    }
-
-    public String getAlbum() {
-        return album;
-    }
-
-    public void setAlbum(String album) {
-        this.album = album;
-    }
-
+    
     public String getMusica() {
         return musica;
     }
-
-    public void setMusica(String musica) {
-        this.musica = musica;
+    
+    public String setMusica(String musica) {
+        return this.musica = musica;
     }
 }

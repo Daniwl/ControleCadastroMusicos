@@ -5,37 +5,41 @@
  */
 package br.com.grupo2;
 
-/**
- *
- * @author T-Gamer
- */
+//Felipe
 public class Discos {
-    private String nome;
-    private String banda;
-    private String ano;
+    private String musico;
+    private String album;
+    private String musica;
 
-    public String getNome() {
-        return nome;
+    public Discos(String musico, String album, String musica) {
+        this.musico = musico;
+        this.album = album;
+        this.musica = musica;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    
+    public String getMusico() {
+        return musico;
     }
 
-    public String getBanda() {
-        return banda;
+    public void setMusico(String musico) {
+        this.musico = musico;
     }
 
-    public void setBanda(String banda) {
-        this.banda = banda;
+    public String getAlbum() {
+        return album;
     }
 
-    public String getAno() {
-        return ano;
+    public void setAlbum(String album) {
+        this.album = album;
     }
 
-    public void setAno(String ano) {
-        this.ano = ano;
+    public String getMusica() {
+        return musica;
+    }
+
+    public void setMusica(String musica) {
+        this.musica = musica;
     }
     
     
