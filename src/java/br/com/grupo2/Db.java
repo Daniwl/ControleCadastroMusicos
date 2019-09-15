@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.cadastro;
+package br.com.grupo2;
 
 import java.util.ArrayList;
 /**
@@ -12,6 +12,8 @@ import java.util.ArrayList;
  */
 public class Db {  
     private static ArrayList<CadastroMusica> cadastrar;
+    private static ArrayList<Bandas> bandas;
+    
         public static ArrayList<CadastroMusica> getCadastro() {
             if (cadastrar == null) {
                 cadastrar = new ArrayList<>();
@@ -28,7 +30,19 @@ public class Db {
             cadastrar.set(index, cadastro);
         }
         
-        public static void remove(int index) {
+        public static void removeCadastroMusica(int index) {
             cadastrar.remove(index);
         }
+        
+        
+    
+    public static void addBanda(Bandas banda){
+        bandas.add(banda);
+    }
+    public static void updateBanda(int index, Bandas banda){
+        bandas.set(index, banda);
+    }
+    public static void removeBanda(int index){
+        bandas.remove(index);
+    }
 }
