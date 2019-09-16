@@ -1,0 +1,10 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<footer align="center">
+    <br>
+    <hr>
+        <h2><b>Integrantes</b></h2>
+        <h3>Daniel Ribeiro</h3>
+        <h3>Felipe Oliveira</h3>
+        <h3>Natalia Rodrigues</h3><br>
+</footer>

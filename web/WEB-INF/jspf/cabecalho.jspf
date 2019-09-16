@@ -1,0 +1,39 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<style type="text/css">
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  font-size: 24px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: black;
+  color: #007bff;
+}
+  </style>
+<nav>
+  <ul class="menu">
+        <li><a href="home.jsp">Home</a></li>
+        <li><a href="adicionarBanda.jsp">Adicionar Banda</a></li>
+        <li><a href="#">Adicionar Disco</a></li>  
+        <li><a href="adicionarMusicas.jsp">Adicionar Musica</a></li>
+</ul>
+</nav>

@@ -12,12 +12,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Projeto 3</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
     </head>
     <body>
        <div align="center"> 
-           <h3><a href="adicionarBanda.jsp">Adicionar Bandas</a></h3>
-           <h3><a href="adicionarMusicas.jsp">Adicionar Musicas</a></h3>
+           <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
            
         <h1><b>Cadastro de Bandas</b></h1>
         <br>
@@ -65,13 +67,7 @@
             <%}%>
         </table>
         
-        <hr>
-        <footer>
-        <h2><b>Integrantes</b></h2>
-        <h3>Daniel Ribeiro</h3>
-        <h3>Felipe Oliveira</h3>
-        <h3>Natalia Rodrigues</h3><br>
-        </footer>
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
        
         
        
