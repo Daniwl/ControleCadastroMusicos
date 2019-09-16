@@ -5,6 +5,7 @@
 --%>
 
 <%@page import="br.com.grupo2.Bandas"%>
+<%@page import="br.com.grupo2.Discos"%>
 <%@page import="br.com.grupo2.Musicas"%>
 <%@page import="br.com.grupo2.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -29,7 +30,7 @@
         <br>
         
         <table border="1">
-            Tabela da Banda
+            Tabela da Banda:
             <tr>
                 <th>Indice</th>
                 <th>Banda</th>
@@ -47,7 +48,25 @@
         </table>
         <br>
         <table border="1">
-                       Tabela da Musica
+            Tabela do Disco:
+            <tr>
+                <th>Indice</th>
+                <th>Disco</th>
+            </tr>
+            <% for(Discos disco: Db.getDisco()){%>
+            <tr>
+                <td><%= Db.getCadastroBanda().indexOf(disco) %></td>
+                <td><%= disco.getDisco() %></td>
+                <td>
+                    <a href="alterarDisco.jsp?index=<%=Db.getDisco().indexOf(disco)%>">Alterar</a>
+                    <a href="excluirDisco.jsp?index=<%=Db.getDisco().indexOf(disco)%>">Excluir</a>
+                </td>
+            </tr>
+            <%}%>
+        </table>
+        <br>
+        <table border="1">
+            Tabela da Musica:
             <tr>
                 <th>Indice</th>
                 <th>Musica</th>
