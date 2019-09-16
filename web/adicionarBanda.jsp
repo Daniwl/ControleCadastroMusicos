@@ -18,8 +18,8 @@
     
     if (request.getParameter("add") != null) {
         String banda = request.getParameter("banda");
-        Bandas c = new Bandas(banda);
-        Db.getCadastro().add(c);
+        Bandas b = new Bandas(banda);
+        Db.getCadastroBanda().add(b);
         response.sendRedirect("index.jsp");
     }
 %>
