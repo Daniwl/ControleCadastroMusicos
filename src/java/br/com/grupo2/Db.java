@@ -40,7 +40,7 @@ public class Db {
         public static ArrayList<Bandas> getCadastroBanda() {
             if (bandas == null) {
                 bandas = new ArrayList<>();
-                bandas.add(new Bandas(""));
+                
             }
             
             return bandas;
@@ -62,7 +62,6 @@ public class Db {
     public static ArrayList<Musicas> getMusica() {
             if (musicas == null) {
                 musicas = new ArrayList<>();
-                musicas.add(new Musicas("","",""));
             }
             
             return musicas;

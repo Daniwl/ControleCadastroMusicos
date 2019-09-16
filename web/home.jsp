@@ -27,8 +27,9 @@
         <h2>A aplicação é resposável por cadastrar bandas, discos e musicas</h2>
         <br>
         <br>
+        
         <table border="1">
-            <caption>Tabela da Banda</caption>
+            Tabela da Banda
             <tr>
                 <th>Indice</th>
                 <th>Banda</th>
@@ -46,7 +47,7 @@
         </table>
         <br>
         <table border="1">
-                        <caption>Tabela da Musica</caption>
+                       Tabela da Musica
             <tr>
                 <th>Indice</th>
                 <th>Musica</th>
