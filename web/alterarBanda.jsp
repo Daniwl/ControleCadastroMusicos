@@ -16,7 +16,7 @@
     }
     
     if (request.getParameter("cancel") != null) {
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("home.jsp");
     }
     
     if (request.getParameter("set") != null) {
@@ -24,7 +24,7 @@
         String banda = request.getParameter("nomeBanda");
         Bandas b = new Bandas(banda);
         Db.getCadastroBanda().set(index, b);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("home.jsp");
     }
 %>
 <!DOCTYPE html>

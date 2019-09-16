@@ -17,13 +17,13 @@
         }
         
         if (request.getParameter("cancel") != null) {
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("home.jsp");
         }
         
         if (request.getParameter("remove") != null) {
             int index = Integer.parseInt(request.getParameter("index"));
             Db.getCadastroBanda().remove(index);
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("home.jsp");
         }
 %>
 <html>

@@ -4,6 +4,7 @@
     Author     : T-Gamer
 --%>
 
+<%@page import="br.com.grupo2.Bandas"%>
 <%@page import="br.com.grupo2.Musicas"%>
 <%@page import="br.com.grupo2.Db"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -21,11 +22,29 @@
         <h1><b>Cadastro de Bandas</b></h1>
         <br>
         
-        <h2>A aplicação é resposável por cadastrar bandas</h2>
+        <h2>A aplicação é resposável por cadastrar bandas, discos e musicas</h2>
         <br>
         <br>
-        
         <table border="1">
+            <caption>Tabela da Banda</caption>
+            <tr>
+                <th>Indice</th>
+                <th>Banda</th>
+            </tr>
+            <% for(Bandas banda: Db.getCadastroBanda()){%>
+            <tr>
+                <td><%= Db.getCadastroBanda().indexOf(banda) %></td>
+                <td><%= banda.getBanda() %></td>
+                <td>
+                    <a href="alterarBanda.jsp?index=<%=Db.getCadastroBanda().indexOf(banda)%>">Alterar</a>
+                    <a href="excluirBanda.jsp?index=<%=Db.getCadastroBanda().indexOf(banda)%>">Excluir</a>
+                </td>
+            </tr>
+            <%}%>
+        </table>
+        <br>
+        <table border="1">
+                        <caption>Tabela da Musica</caption>
             <tr>
                 <th>Indice</th>
                 <th>Musica</th>

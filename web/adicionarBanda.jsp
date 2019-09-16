@@ -13,14 +13,14 @@
 
 <%
     if (request.getParameter("cancel") != null) {
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("home.jsp");
     } 
     
     if (request.getParameter("add") != null) {
         String banda = request.getParameter("banda");
         Bandas b = new Bandas(banda);
         Db.getCadastroBanda().add(b);
-        response.sendRedirect("index.jsp");
+        response.sendRedirect("home.jsp");
     }
 %>
 

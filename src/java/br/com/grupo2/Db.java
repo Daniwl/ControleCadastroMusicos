@@ -40,6 +40,7 @@ public class Db {
         public static ArrayList<Bandas> getCadastroBanda() {
             if (bandas == null) {
                 bandas = new ArrayList<>();
+                bandas.add(new Bandas(""));
             }
             
             return bandas;
@@ -61,19 +62,11 @@ public class Db {
     public static ArrayList<Musicas> getMusica() {
             if (musicas == null) {
                 musicas = new ArrayList<>();
-                musicas.add(new Musicas("Nome","Banda","04:00"));
+                musicas.add(new Musicas("","",""));
             }
             
             return musicas;
         }
     
-    public static void addMusica(Musicas musica){
-        musicas.add(musica);
-    }
-    public static void updateMusica(int index, Musicas banda){
-        musicas.set(index, banda);
-    }
-    public static void removeMusica(int index){
-        musicas.remove(index);
-    }
+    
 }
