@@ -16,8 +16,9 @@
         int index = Integer.parseInt(request.getParameter("index"));
         Db.getDisco().remove(disco);
         response.sendRedirect("home.jsp");
-%>
     }
+%>
+    
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,11 +31,10 @@
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <div align="center">
-        <h1>Formulário para excluir Musica:</h1>
+        <h1>Formulário para excluir Disco:</h1>
         <form>
-            Índice:<br/><b><%=request.getParameter("index")%></b><br>
             <input type="hidden" name="index" value="<%=request.getParameter("index")%>"/> <br/>      
-            Nome do Disco:<br/><b><%=disco.getDisco()%></b><br>
+            Nome do Disco:<br/><br/><b><%=disco.getDisco()%></b><br/><br/>
             <input type="submit" name="remove" value="Excluir"/>
             <input type="submit" name="cancel" value="Cancelar"/>
         </form>
