@@ -37,7 +37,7 @@ public class Db {
         }
         
         
-        public static ArrayList<Bandas> getCadastro() {
+        public static ArrayList<Bandas> getCadastroBanda() {
             if (bandas == null) {
                 bandas = new ArrayList<>();
             }
