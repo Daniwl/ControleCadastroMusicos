@@ -37,7 +37,7 @@
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         
-        <h1 style="text-align: center">Adicionar Nova Banda</h1><br>
+        <h1 style="text-align: center">Adicionar Nova Banda:</h1><br>
         
         <form align="center">
             <h1 style="text-align: center">Nome da banda:</h1><br>
