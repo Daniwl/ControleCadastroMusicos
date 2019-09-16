@@ -4,7 +4,7 @@
     Author     : natal
 --%>
 
-<%@page import="br.com.cadastro.CadastroBanda"%>
+<%@page import="br.com.cadastro.Bandas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="br.com.cadastro.Db"%>
 <!DOCTYPE html>
