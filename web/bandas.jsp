@@ -32,16 +32,16 @@
 
 <%----- Pegando valores -----%>
 
-                <%for (CadastroBanda c: Db.getCadastro()) {%>
+                <%for (Bandas b: Db.getCadastroBanda()) {%>
             
-                <td><%= Db.getCadastro().indexOf(c) %></td>
+                <td><%= Db.getCadastroBanda().indexOf(b) %></td>
                 <td><%= c.getBanda() %></td>
                 
 <%----- Mais comandos -----%>  
 
                 <td>
-                    <a href="alterar.jsp?index=<%= Db.getCadastro().indexOf(c) %>">Alterar</a>
-                    <a href="excluir.jsp?index=<%= Db.getCadastro().indexOf(c) %>">Excluir</a>
+                    <a href="alterar.jsp?index=<%= Db.getCadastroBanda().indexOf(b) %>">Alterar</a>
+                    <a href="excluir.jsp?index=<%= Db.getCadastroBanda().indexOf(b) %>">Excluir</a>
                 </td>
             </tr>
         <% } %>
