@@ -31,7 +31,7 @@
             Nome da banda:<br/>
             <input placeholder="Inserir o nome da banda" type="text" name="nomeBanda"/> <br/>
             Duração:<br/>
-            <input placeholder="Inserir a duração da musica:"type="text" name="duracao"/> <br/> <br/>
+            <input placeholder="Inserir a duração da musica:"type="time" name="duracao"/> <br/> <br/>
             <input type="submit" name="add" value="Adicionar"/>
             <input type="submit" name="cancel" value="Cancelar"/>
         </form>

@@ -17,7 +17,6 @@
        <div align="center"> 
         
            <h3><a href="adicionarMusicas.jsp">Adicionar Musicas</a></h3>
-           <h3><a href="excluirMusicas.jsp">Excluir Musicas</a></h3>
            
         <h1><b>Cadastro de Bandas</b></h1>
         <br>
@@ -40,6 +39,7 @@
                 <td><%= musica.getNomeBanda() %></td>
                 <td><%= musica.getDuracaoMusicas() %></td>
                 <td>
+                    <a href="alterarMusicas.jsp?index=<%=Db.getMusica().indexOf(musica)%>">Alterar</a>
                     <a href="excluirMusicas.jsp?index=<%=Db.getMusica().indexOf(musica)%>">Excluir</a>
                 </td>
             </tr>

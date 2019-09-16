@@ -28,7 +28,7 @@
         <div align="center">
         <h1>Formulário para excluir Musica:</h1>
         <form>
-            índice:<br/><b><%=request.getParameter("index")%></b><br>
+            Índice:<br/><b><%=request.getParameter("index")%></b><br>
             <input type="hidden" name="index" value="<%=request.getParameter("index")%>"/> <br/>      
             Nome da musica:<br/><b><%=musica.getNomeMusica()%></b><br>
             Nome da banda:<br/><b><%=musica.getNomeBanda()%></b><br>
