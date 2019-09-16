@@ -15,7 +15,7 @@
     </head>
     <body>
        <div align="center"> 
-        
+           <h3><a href="adicionarBanda.jsp">Adicionar Bandas</a></h3>
            <h3><a href="adicionarMusicas.jsp">Adicionar Musicas</a></h3>
            
         <h1><b>Cadastro de Bandas</b></h1>
