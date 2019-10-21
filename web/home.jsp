@@ -52,11 +52,15 @@
             <tr>
                 <th>Indice</th>
                 <th>Disco</th>
+                <th>Musica</th>
+                <th>Musico</th>
             </tr>
             <% for(Discos disco: Db.getDisco()){%>
             <tr>
                 <td><%= Db.getCadastroBanda().indexOf(disco) %></td>
-                <td><%= disco.getDisco() %></td>
+                <td><%= disco.getAlbum()%></td>
+                <td><%= disco.getMusica()%></td>
+                <td><%= disco.getMusico()%></td>
                 <td>
                     <a href="alterarDisco.jsp?index=<%=Db.getDisco().indexOf(disco)%>">Alterar</a>
                     <a href="excluirDisco.jsp?index=<%=Db.getDisco().indexOf(disco)%>">Excluir</a>

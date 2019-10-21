@@ -4,7 +4,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%  
-    Discos disco = new Discos(null);
+    Discos disco = new Discos(null,null,null);
     if(request.getParameter("index") != null){
         int index = Integer.parseInt(request.getParameter("index"));
         disco = Db.getDisco().get(index);
@@ -34,7 +34,7 @@
         <h1>Formulário para excluir Disco:</h1>
         <form>
             <input type="hidden" name="index" value="<%=request.getParameter("index")%>"/> <br/>      
-            Nome do Disco:<br/><br/><b><%=disco.getDisco()%></b><br/><br/>
+            Nome do Disco:<br/><br/><b><%=disco.getAlbum()%></b><br/><br/>
             <input type="submit" name="remove" value="Excluir"/>
             <input type="submit" name="cancel" value="Cancelar"/>
         </form>

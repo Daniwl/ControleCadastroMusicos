@@ -1,4 +1,5 @@
 
+<%@page import="br.com.grupo2.Bandas"%>
 <%@page import="br.com.grupo2.Db"%>
 <%@page import="br.com.grupo2.Musicas"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -34,7 +35,14 @@
             <input placeholder="Inserir o nome da musica:" type="text" name="nomeMusica"/> <br/>
             
             Nome da banda:<br/>
-            <input placeholder="Inserir o nome da banda" type="text" name="nomeBanda"/> <br/>
+            
+            
+            <select id=cbPais name="nomeBanda">
+                <% for(Bandas banda: Db.getCadastroBanda()){%>
+                <option><%= banda.getBanda() %></option>
+                <%}%>
+            </select><br/>
+            
             Duração:<br/>
             <input placeholder="Inserir a duração da musica:"type="time" name="duracao"/> <br/> <br/>
             <input type="submit" name="add" value="Adicionar"/>

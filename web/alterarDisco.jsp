@@ -4,7 +4,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    Discos disco = new Discos(null);
+    Discos disco = new Discos(null,null,null);
     if(request.getParameter("index") != null){
         int index = Integer.parseInt(request.getParameter("index"));
         disco = Db.getDisco().get(index);
@@ -15,7 +15,9 @@
     }if(request.getParameter("set") != null){
         int index = Integer.parseInt(request.getParameter("index"));
         String nomeDisco = request.getParameter("nomeDisco");
-        Discos d = new Discos(nomeDisco);
+        String nomeAlbum = request.getParameter("nomeAlbum");
+        String nomeMusica = request.getParameter("nomeMusica");
+        Discos d = new Discos(nomeDisco,nomeAlbum,nomeMusica);
         Db.getDisco().set(index, d);
         response.sendRedirect("home.jsp");
     }
@@ -36,8 +38,12 @@
         <form>
             Índice:<br/><b><%=request.getParameter("index")%></b><br>
             <input type="hidden" name="index" value="<%=request.getParameter("index")%>"/> <br/>
-            Nome do Disco:<br/>
-            <input type="text" name="nomeDisco" value="<%=disco.getDisco()%>"/> <br/>
+            Nome do musico:<br/>
+            <input type="text" name="nomeDisco" value="<%=disco.getMusico()%>"/> <br/>
+            Nome do album:<br/>
+            <input type="text" name="nomeAlbum" value="<%=disco.getMusico()%>"/> <br/>
+            Nome da musica:<br/>
+            <input type="text" name="nomeMusica" value="<%=disco.getMusico()%>"/> <br/>
             <input type="submit" name="set" value="Atualizar"/>
             <input type="submit" name="cancel" value="Cancelar"/>
         </form>

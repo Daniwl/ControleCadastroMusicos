@@ -16,7 +16,7 @@ public class Db {
     private static ArrayList<Musicas> musicas;
     
     
-       public static ArrayList<Discos> getCadastroMusica() {
+       public static ArrayList<Discos> getDisco() {
             if (cadastrar == null) {
                 cadastrar = new ArrayList<>();
             }
